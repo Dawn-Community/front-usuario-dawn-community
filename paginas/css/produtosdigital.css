@@ -1,0 +1,26 @@
+/* Estilos personalizados */
+    
+:root {
+    --gradient-color-1: #062442; /* Cor 1 */
+    --gradient-color-2: #091624; /* Cor 2 */
+    --gradient-color-3: #2c3e50; /* Cor 3 */
+    --gradient-color-4: #1f2d3d; /* Cor 4 */
+  }
+    
+    body{
+        color: white;
+    }
+    
+    .card-body{
+        background: linear-gradient(to bottom, var(--gradient-color-3), var(--gradient-color-4));
+    }
+    
+    
+.rodape{
+    border-top: 0.4px solid #fff2e7;
+    padding: 32px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
