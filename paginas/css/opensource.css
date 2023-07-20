@@ -78,15 +78,6 @@
 
 
 
-.rodape{
-    border-top: 0.4px solid #fff2e7;
-    padding: 32px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-}
-
 
 @media (max-width: 900px){
     
@@ -112,12 +103,4 @@
 
 
 
-.rodape{
-    border-top: 0.4px solid #fff2e7;
-    padding: 32px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-}
 }
