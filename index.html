@@ -1,74 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comunidade do Discord sobre Programação">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="./paginas/css/menucss.css">
-    <link rel="shortcut icon" href="./imagens/Comunidade.svg" type="image/x-icon">
-    <script src="./script/scriptMenu.js" defer></script>
-    <title>Dawn Community Discord</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="./lib/tailwind.config.js"></script>
+  </head>
+  <body>
+    <header
+      class="w-full flex items-center justify-between p-4 bg-zinc-800 border-b border-zinc-600 flex-wrap lg:flex-row flex-col lg:gap-0 gap-2"
+    >
+      <div class="w-full lg:w-1/3">
+        <h1 class="text-4xl text-white lg:text-start text-center">Logo</h1>
+      </div>
+      <div
+        class="lg:w-1/3 w-full flex items-center justify-center gap-4 lg:mt-0 mt-6"
+      >
+        <a
+          href="#"
+          class="text-white font-montserrat text-xl transition-all hover:bg-primary pt-1 pb-1 pr-3 pl-3 rounded hover:border-b hover:border-primary lg:border-b border-zinc-700 hover:shadow-my hover:shadow-[#5c00bf] font-bold"
+          >Comunidade</a
+        >
+        <a
+          href="#"
+          class="text-white font-montserrat text-xl transition-all hover:bg-primary pt-1 pb-1 pr-3 pl-3 rounded hover:border-b hover:border-primary lg:border-b border-zinc-700 hover:shadow-my hover:shadow-[#5c00bf] font-bold"
+          >Produtos</a
+        >
+      </div>
+      <div
+        class="lg:w-1/3 w-full flex items-center lg:justify-end justify-center gap-4"
+      >
+        <a
+          href="#"
+          class="text-white font-montserrat text-xl transition-all hover:bg-zinc-700 pt-1 pb-1 pr-3 pl-3 rounded border border-zinc-700 font-bold"
+          >Login</a
+        >
+        <a
+          href="#"
+          class="text-white font-montserrat text-xl transition-all bg-primary pt-1 pb-1 pr-3 pl-3 rounded font-bold"
+          >Cadastre-se</a
+        >
+      </div>
+    </header>
 
-    <header id="header">
-        <img class="cabecalho-imagem" src="./imagens/Comunidade.svg" alt="Logo Dark Programming">
-        
-        <nav id="nav" class="dp-menu">
-            <button aria-label="Abri menu" aria-expanded="false" aria-haspopup="true" class="MenuMobile">Menu
-                <span id="hamburguer"></span>
-            </button>
-          <ul id="menu" role="menu">
-            <li><a  href="index.html">Comunidade Dawn Community</a>
-                <ul>
-                    <li><a  href="paginas/desafios.html">Desafios Mensalmente</a></li>
-            <li><a  href="./paginas/projetoOpensource.html">Projetos Open Source</a></li>
-            <li><a  href="#">Sobre</a></li>
-                </ul>
-            </li>
+    <section
+      class="w-full h-[500px] flex items-center justify-center bg-zinc-800 flex-col gap-2 relative"
+    >
+      <span
+        class="w-[250px] h-[100px] bg-primary rounded-full absolute inset blur-3xl"
+      ></span>
 
-            <li><a href="./paginas/produtosDigitais.html">Produtos Digitais</a></li>
-            
-          </ul>
-        </nav>
-    </header><!--fim cabecalo-->
+      <h1 class="z-10 text-4xl font-motserrat text-white mr-2 ml-2 font-bold">
+        Dawn Community
+      </h1>
+      <p
+        class="z-10 mr-2 ml-2 text-xl font-montserrat text-zinc-500 font-bold text-center"
+      >
+        Venha para uma Comunidade voltada para Programação
+      </p>
+      <button
+        class="z-10 text-4xl font-montserrat text-zinc-100 border border-primary-light-100 font-bold pb-1 pt-1 pr-3 pl-3 rounded transition-all mt-6"
+      >
+        Conhecer
+      </button>
+    </section>
 
+    <section
+      class="w-full h-[800px] flex items-center justify-center bg-zinc-800 flex-col gap-8 relative after:absolute after:w-[150px] after:h-[1px] after:bg-primary after:top-4 overflow-hidden before:absolute before:w-[150px] before:h-[1px] before:bg-primary before:bottom-4"
+    >
+      <span
+        class="w-[500px] h-[400px] bg-primary-opacity rounded-full absolute left-[-450px] blur-3xl"
+      ></span>
 
-        
-    
-    <main class="conteudo content">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo" >Dawn Community</h1>
-                <h2 class="conteudo-principal-escrito-subtitulo">Venha para uma Comunidade voltada para Programação</h2>
-                <a href="https://discord.gg/HETRwhS8eh" target="_blank"><button class="conteudo-principal-escrito-botao">Entra</button></a>
-            </div>
+      <span
+        class="w-[500px] h-[400px] bg-primary-opacity rounded-full absolute right-[-250px] bottom-[-250px] blur-3xl"
+      ></span>
 
-            <img class="conteudo-principal-imagem" src="./imagens/programming-img.svg" alt="Programming-img">
-        </section>
+      <h1
+        class="z-10 text-4xl font-motserrat text-white mr-6 ml-6 font-bold text-center"
+      >
+        Proposito da Comunidade
+      </h1>
 
+      <p
+        class="z-10 mr-6 ml-6 text-xl font-montserrat text-zinc-500 font-bold text-justify max-w-[800px]"
+      >
+        <span class="text-primary-light-100">1.</span> A Comunidade Dawn Community é um espaço virtual dedicado a reunir
+        programadores, desenvolvedores e entusiastas da área que possuem um
+        interesse particular por programação, tecnologia
+      </p>
 
-        <section class="conteudo-secundario">
-            <h3 class="conteudo-secundario-titulo">Proposito da Comunidade</h3>
-            <p class="conteudo-secundario-paragrafo">
-               1. A Comunidade Dawn Community é um espaço virtual dedicado a reunir programadores, desenvolvedores e entusiastas da área que possuem um interesse particular por programação, tecnologia  
-            </p>
-            <p class="conteudo-secundario-paragrafo">2. Compartilhar conhecimento: A comunidade se concentra em fornecer tutoriais, artigos e recursos educacionais sobre uma ampla gama de tópicos de programação
+      <p
+        class="z-10 mr-6 ml-6 text-xl font-montserrat text-zinc-500 font-bold text-justify max-w-[800px]"
+      >
+        <span class="text-primary-light-100">2.</span> Compartilhar conhecimento: A comunidade se concentra em fornecer
+        tutoriais, artigos e recursos educacionais sobre uma ampla gama de
+        tópicos de programação
+      </p>
 
-            </p>
-            <p class="conteudo-secundario-paragrafo">
-               3. Projetos colaborativos: A Comunidade Dawn Community promove projetos colaborativos onde os membros podem unir forças para desenvolver aplicativos, criar soluções inovadoras e explorar ideias tecnológicas avançadas. 
-            </p>
-        </section>
+      <p
+        class="z-10 mr-6 ml-6 text-xl font-montserrat text-zinc-500 font-bold text-justify max-w-[800px]"
+      >
+        <span class="text-primary-light-100">3.</span> Projetos colaborativos: A Comunidade Dawn Community promove projetos
+        colaborativos onde os membros podem unir forças para desenvolver
+        aplicativos, criar soluções inovadoras e explorar ideias tecnológicas
+        avançadas.
+      </p>
+    </section>
 
-    </main><!-- fim do conteudo-->
-
-   
-    <footer class="rodape content">
-
-        <p class="rodape-p">&copy; 2023 Comunidade Dawn Community. Todos os direitos reservados.</p>
-
-    </footer> <!--Fim do rodape-->
-</body>
+    <footer class="w-full h-[45px] items-center justify-center bg-zinc-800">
+      <p class="text-center text-zinc-500 font-montserrat text-xl">
+        © Dawn Community - Todos os direitos reservados
+      </p>
+    </footer>
+  </body>
 </html>
