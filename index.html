@@ -7,6 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="./lib/tailwind.config.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/home/script.js" defer type="module"></script>
+    <link rel="stylesheet" href="./swiper.css" />
   </head>
   <body>
     <header
@@ -20,12 +27,12 @@
       >
         <a
           href="#"
-          class="text-white font-montserrat text-xl transition-all hover:bg-primary pt-1 pb-1 pr-3 pl-3 rounded hover:border-b hover:border-primary lg:border-b border-zinc-700 hover:shadow-my hover:shadow-[#5c00bf] font-bold"
+          class="text-white font-montserrat text-xl transition-all hover:bg-zinc-700 pt-1 pb-1 pr-3 pl-3 rounded hover:border-b lg:border-b border-zinc-700 font-bold"
           >Comunidade</a
         >
         <a
           href="#"
-          class="text-white font-montserrat text-xl transition-all hover:bg-primary pt-1 pb-1 pr-3 pl-3 rounded hover:border-b hover:border-primary lg:border-b border-zinc-700 hover:shadow-my hover:shadow-[#5c00bf] font-bold"
+          class="text-white font-montserrat text-xl transition-all hover:bg-zinc-700 pt-1 pb-1 pr-3 pl-3 rounded hover:border-b lg:border-b border-zinc-700 font-bold"
           >Produtos</a
         >
       </div>
@@ -87,27 +94,44 @@
       <p
         class="z-10 mr-6 ml-6 text-xl font-montserrat text-zinc-500 font-bold text-justify max-w-[800px]"
       >
-        <span class="text-primary-light-100">1.</span> A Comunidade Dawn Community é um espaço virtual dedicado a reunir
-        programadores, desenvolvedores e entusiastas da área que possuem um
-        interesse particular por programação, tecnologia
+        <span class="text-primary-light-100">1.</span> A Comunidade Dawn
+        Community é um espaço virtual dedicado a reunir programadores,
+        desenvolvedores e entusiastas da área que possuem um interesse
+        particular por programação, tecnologia
       </p>
 
       <p
         class="z-10 mr-6 ml-6 text-xl font-montserrat text-zinc-500 font-bold text-justify max-w-[800px]"
       >
-        <span class="text-primary-light-100">2.</span> Compartilhar conhecimento: A comunidade se concentra em fornecer
-        tutoriais, artigos e recursos educacionais sobre uma ampla gama de
-        tópicos de programação
+        <span class="text-primary-light-100">2.</span> Compartilhar
+        conhecimento: A comunidade se concentra em fornecer tutoriais, artigos e
+        recursos educacionais sobre uma ampla gama de tópicos de programação
       </p>
 
       <p
         class="z-10 mr-6 ml-6 text-xl font-montserrat text-zinc-500 font-bold text-justify max-w-[800px]"
       >
-        <span class="text-primary-light-100">3.</span> Projetos colaborativos: A Comunidade Dawn Community promove projetos
-        colaborativos onde os membros podem unir forças para desenvolver
-        aplicativos, criar soluções inovadoras e explorar ideias tecnológicas
-        avançadas.
+        <span class="text-primary-light-100">3.</span> Projetos colaborativos: A
+        Comunidade Dawn Community promove projetos colaborativos onde os membros
+        podem unir forças para desenvolver aplicativos, criar soluções
+        inovadoras e explorar ideias tecnológicas avançadas.
       </p>
+    </section>
+
+    <section class="w-full bg-zinc-800">
+      <h1
+        class="z-10 text-4xl font-motserrat text-white mr-6 ml-6 font-bold text-center"
+      >
+        Colaboradores:
+      </h1>
+
+      <div class="swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-button"></div>
+        <div class="swiper-button-next swiper-button"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
     </section>
 
     <footer class="w-full h-[45px] items-center justify-center bg-zinc-800">
