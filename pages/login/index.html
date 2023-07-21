@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login De Usuario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="../../lib/tailwind.config.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="../../global.css" />
+  </head>
+  <body class="bg-zinc-800">
+    <div class="w-full h-[900px] flex items-center justify-center">
+      <form
+        action="#"
+        method="post"
+        class="bg-white sm:w-[400px] w-[90%]  p-[20px] rounded-[10px] flex items-center flex-col gap-2 relative"
+      >
+        <a
+          href="../../index.html"
+          class="bg-primary p-2 absolute top-[-10px] left-[-10px] rounded-[50%] text-white"
+          ><i data-lucide="home"></i
+        ></a>
+        <h3 class="text-center text-primary text-4xl font-montserrat font-bold">
+          Login
+        </h3>
+        <input
+          type="email"
+          name="email"
+          placeholder="Seu email.."
+          required
+          class="w-full hborder rounded p-2 text-2xl outline-none font-montserrat font-bold"
+        />
+        <input
+          type="password"
+          name="senha"
+          placeholder="Sua senha.."
+          class="w-full hborder rounded p-2 text-2xl outline-none font-montserrat font-bold"
+          required
+        />
+        <button
+          href="index.html"
+          class="w-[100%] bg-primary rounded p-2 text-center text-white font-montserrat text-2xl font-bold"
+        >
+          Login
+        </button>
+        <a
+          href="../register/index.html"
+          type="submit"
+          name="acao"
+          class="w-[100%]rounded text-center text-primary font-montserrat text-xl font-bold cursor-pointer"
+          >Cadastrar</a
+        >
+      </form>
+    </div>
+  </body>
+
+  <script defer>
+    lucide.createIcons();
+  </script>
+</html>
